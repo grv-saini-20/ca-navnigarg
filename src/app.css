@@ -1,0 +1,210 @@
+/* ============================================================
+   Navnigarg CA & Associates — design tokens
+   Direction: "Ledger & Seal" — the visual language of a physical
+   account ledger and an official verification stamp, rendered
+   for the web. Paper surfaces, ink typography, brass seal accent,
+   tabular figures for anything numeric (phone, dates, stats).
+   ============================================================ */
+
+:root {
+	/* Color */
+	--ink: #132242; /* primary text / navy surfaces */
+	--ink-soft: #33456b;
+	--paper: #efe9d8; /* ledger paper background */
+	--paper-raised: #f8f4e8; /* lighter card surface on paper */
+	--rule: #cdc2a0; /* faded ledger rule lines */
+	--rule-on-ink: rgba(239, 233, 216, 0.22);
+	--brass: #b98a3f; /* seal / stamp accent */
+	--brass-deep: #93692c;
+	--verified: #1f5c4c; /* approved / trust green */
+	--verified-soft: #e4ede9;
+	--white: #fffdf7;
+
+	/* Type */
+	--font-display: 'Fraunces', 'Iowan Old Style', ui-serif, Georgia, serif;
+	--font-body: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+	/* Layout */
+	--maxw: 1180px;
+	--edge: clamp(1.25rem, 4vw, 3rem);
+
+	color-scheme: light;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: 16px;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display);
+	color: var(--ink);
+	line-height: 1.08;
+	margin: 0;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	font-family: inherit;
+}
+
+.tabular {
+	font-family: var(--font-mono);
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0.01em;
+}
+
+.eyebrow {
+	font-family: var(--font-mono);
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 0.72rem;
+	font-weight: 500;
+	color: var(--brass-deep);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55em;
+}
+
+.eyebrow::before {
+	content: '';
+	width: 1.35em;
+	height: 1px;
+	background: var(--brass-deep);
+	display: inline-block;
+}
+
+.wrap {
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding-inline: var(--edge);
+}
+
+.ledger-rule {
+	border: none;
+	border-top: 1px solid var(--rule);
+	margin: 0;
+}
+
+.btn {
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6em;
+	padding: 0.85em 1.5em;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	text-decoration: none;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease,
+		background 0.15s ease,
+		color 0.15s ease;
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn-brass {
+	background: var(--brass);
+	color: var(--white);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-brass:hover {
+	background: var(--brass-deep);
+}
+
+.btn-outline {
+	background: transparent;
+	color: var(--paper);
+	border-color: var(--rule-on-ink);
+}
+
+.btn-outline:hover {
+	border-color: var(--paper);
+}
+
+.btn-ink {
+	background: transparent;
+	color: var(--ink);
+	border-color: var(--ink);
+}
+
+.btn-ink:hover {
+	background: var(--ink);
+	color: var(--paper);
+}
+
+/* Scroll-reveal utility, paired with the `reveal` action */
+[data-reveal] {
+	opacity: 0;
+	transform: translateY(16px);
+	transition:
+		opacity 0.6s ease,
+		transform 0.6s ease;
+}
+
+[data-reveal='in'] {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	[data-reveal] {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+:focus-visible {
+	outline: 2px solid var(--brass);
+	outline-offset: 3px;
+}
