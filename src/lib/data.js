@@ -48,7 +48,11 @@ export const serviceGroups = [
 			{ name: 'MSME & Startup Registration', detail: 'Udyam and DPIIT recognition for early-stage entities.' },
 			{ name: 'ROC & MCA Filings', detail: 'Annual returns, resolutions and statutory filings.' },
 			{ name: 'PAN, TAN & Digital Signature', detail: 'Application and renewal, including DSC.' },
-			{ name: 'FSSAI, IEC & Business Licenses', detail: 'Food, import-export and other regulatory licenses.' }
+			{ name: 'FSSAI, IEC & Business Licenses', detail: 'Food, import-export and other regulatory licenses.' },
+			{ name: 'Patent Registration', detail: 'Filing and follow-up to protect your inventions.' },
+			{ name: 'Trademark Registration', detail: 'Brand name and logo search, filing and objections.' },
+			{ name: 'Passport Registration Form', detail: 'Application form preparation and document checklist.' },
+			{ name: 'Visa Application Form', detail: 'Form filling and documentation support for visa applications.' }
 		]
 	},
 	{
