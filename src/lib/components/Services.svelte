@@ -60,7 +60,9 @@
 	.group {
 		background: var(--paper-raised);
 		border: 1px solid var(--rule);
-		border-radius: 3px;
+		border-radius: 14px;
+		box-shadow: var(--shadow-card);
+		border-top: 3px solid var(--brass);
 		padding: 1.6rem 1.6rem 0.4rem;
 	}
 

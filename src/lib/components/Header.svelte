@@ -19,12 +19,7 @@
 <header class="site-header">
 	<div class="wrap bar">
 		<a href="#top" class="brand" onclick={closeMenu}>
-			<span class="brand-mark" aria-hidden="true">
-				<svg viewBox="0 0 40 40" width="30" height="30">
-					<circle cx="20" cy="20" r="19" fill="none" stroke="var(--brass)" stroke-width="1.4" />
-					<path d="M12 21 L17 26 L28 14" fill="none" stroke="var(--brass)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-				</svg>
-			</span>
+			<img src="/logo.png" alt="Navnigarg & Associates logo" class="brand-logo" width="48" height="48" />
 			<span class="brand-text">
 				<span class="brand-name">Navnigarg</span>
 				<span class="brand-sub tabular">CA &amp; ASSOCIATES</span>
@@ -69,7 +64,8 @@
 		position: sticky;
 		top: 0;
 		z-index: 50;
-		background: var(--ink);
+		background: rgba(15, 30, 48, 0.92);
+		backdrop-filter: blur(10px);
 		border-bottom: 1px solid var(--rule-on-ink);
 	}
 
@@ -89,6 +85,13 @@
 		color: var(--paper);
 		min-width: 0;
 		flex: none;
+	}
+
+	.brand-logo {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px rgba(194, 162, 89, 0.55);
 	}
 
 	.brand-text {
@@ -177,7 +180,7 @@
 		height: 38px;
 		background: transparent;
 		border: 1px solid var(--rule-on-ink);
-		border-radius: 3px;
+		border-radius: 50%;
 		cursor: pointer;
 	}
 

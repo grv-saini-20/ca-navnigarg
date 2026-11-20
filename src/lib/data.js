@@ -46,6 +46,7 @@ export const serviceGroups = [
 		items: [
 			{ name: 'Company & LLP Registration', detail: 'End-to-end incorporation with MCA.' },
 			{ name: 'MSME & Startup Registration', detail: 'Udyam and DPIIT recognition for early-stage entities.' },
+			{ name: 'Shop & Establishment License Registration', detail: 'Registration under the state Shops and Establishments Act for your business premises.' },
 			{ name: 'ROC & MCA Filings', detail: 'Annual returns, resolutions and statutory filings.' },
 			{ name: 'PAN, TAN & Digital Signature', detail: 'Application and renewal, including DSC.' },
 			{ name: 'FSSAI, IEC & Business Licenses', detail: 'Food, import-export and other regulatory licenses.' },

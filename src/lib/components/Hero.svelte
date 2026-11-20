@@ -1,5 +1,4 @@
 <script>
-	import Seal from './Seal.svelte';
 </script>
 
 <section class="hero" id="top">
@@ -17,7 +16,7 @@
 			</p>
 			<div class="hero-actions">
 				<a href="#contact" class="btn btn-brass">Book your free consultation</a>
-				<a href="#services" class="btn btn-ink">See our services</a>
+				<a href="#services" class="btn btn-outline">See our services</a>
 			</div>
 			<dl class="hero-facts">
 				<div>
@@ -36,7 +35,7 @@
 		</div>
 
 		<div class="hero-seal">
-			<Seal size={200} />
+			<img src="/logo.png" alt="Navnigarg & Associates" class="hero-logo" width="320" height="320" />
 			<p class="hero-seal-caption tabular">Certified · Confidential · On time</p>
 		</div>
 	</div>
@@ -45,7 +44,20 @@
 <style>
 	.hero {
 		padding-top: clamp(2.5rem, 6vw, 4.5rem);
-		background: var(--paper);
+		background:
+			radial-gradient(900px 480px at 85% 30%, rgba(194, 162, 89, 0.22), transparent 60%),
+			linear-gradient(160deg, #0b1827 0%, #12273f 100%);
+		color: var(--paper);
+	}
+
+	.hero-logo {
+		width: clamp(220px, 28vw, 340px);
+		height: auto;
+		border-radius: 50%;
+		box-shadow:
+			0 0 0 1px rgba(194, 162, 89, 0.5),
+			0 30px 70px -20px rgba(0, 0, 0, 0.6),
+			0 0 80px -10px rgba(194, 162, 89, 0.25);
 	}
 
 	.hero-grid {
@@ -58,12 +70,13 @@
 	.hero-copy h1 {
 		font-size: clamp(2.1rem, 5vw, 3.4rem);
 		margin-top: 0.9rem;
+		color: var(--white);
 		max-width: 17ch;
 		text-wrap: balance;
 	}
 
 	.ink-highlight {
-		color: var(--brass-deep);
+		color: var(--brass);
 		font-style: italic;
 	}
 
@@ -71,7 +84,7 @@
 		margin-top: 1.4rem;
 		max-width: 46ch;
 		font-size: 1.05rem;
-		color: var(--ink-soft);
+		color: rgba(247, 244, 237, 0.78);
 	}
 
 	.hero-actions {
@@ -87,7 +100,7 @@
 		gap: 1.75rem;
 		margin: 2.5rem 0 0;
 		padding-top: 1.5rem;
-		border-top: 1px solid var(--rule);
+		border-top: 1px solid var(--rule-on-ink);
 	}
 
 	.hero-facts dt {
@@ -95,12 +108,13 @@
 		font-size: 0.68rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
-		color: var(--ink-soft);
-		opacity: 0.75;
+		color: var(--brass);
+		opacity: 0.9;
 	}
 
 	.hero-facts dd {
 		margin: 0.3rem 0 0;
+		color: var(--white);
 		font-size: 0.95rem;
 		font-weight: 500;
 	}
@@ -116,7 +130,7 @@
 	.hero-seal-caption {
 		font-size: 0.7rem;
 		letter-spacing: 0.08em;
-		color: var(--ink-soft);
+		color: var(--brass);
 		text-transform: uppercase;
 	}
 

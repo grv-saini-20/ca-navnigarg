@@ -6,10 +6,7 @@
 <footer class="site-footer">
 	<div class="wrap footer-grid">
 		<div class="footer-brand">
-			<svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
-				<circle cx="20" cy="20" r="19" fill="none" stroke="var(--brass)" stroke-width="1.4" />
-				<path d="M12 21 L17 26 L28 14" fill="none" stroke="var(--brass)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
-			</svg>
+			<img src="/logo.png" alt="" width="56" height="56" class="footer-logo" />
 			<span>{firm.name}</span>
 		</div>
 
@@ -50,6 +47,11 @@
 		gap: 0.6rem;
 		font-family: var(--font-display);
 		font-weight: 600;
+	}
+
+	.footer-logo {
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px rgba(194, 162, 89, 0.55);
 	}
 
 	.footer-links {
