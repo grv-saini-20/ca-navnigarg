@@ -10,7 +10,7 @@
 				every single filing.
 			</h1>
 			<p class="hero-lede">
-				Navni Garg &amp; Associates is a complete tax solution for individuals,
+				Navni Garg &amp; Associates is a complete financial solution for individuals,
 				startups, SMEs and corporations who want their books, taxes and filings handled
 				with accuracy — and no surprises.
 			</p>
