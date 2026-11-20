@@ -10,7 +10,7 @@
 				every single filing.
 			</h1>
 			<p class="hero-lede">
-				Navnigarg CA &amp; Associates is a chartered accountancy practice for individuals,
+				Navni Garg &amp; Associates is a complete tax solution for individuals,
 				startups, SMEs and corporations who want their books, taxes and filings handled
 				with accuracy — and no surprises.
 			</p>
@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="hero-seal">
-			<img src="/logo.png" alt="Navnigarg & Associates" class="hero-logo" width="320" height="320" />
+			<img src="/logo.png" alt="Navni Garg & Associates" class="hero-logo" width="320" height="320" />
 			<p class="hero-seal-caption tabular">Certified · Confidential · On time</p>
 		</div>
 	</div>

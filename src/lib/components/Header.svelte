@@ -19,10 +19,10 @@
 <header class="site-header">
 	<div class="wrap bar">
 		<a href="#top" class="brand" onclick={closeMenu}>
-			<img src="/logo.png" alt="Navnigarg & Associates logo" class="brand-logo" width="48" height="48" />
+			<img src="/logo.png" alt="Navni Garg & Associates logo" class="brand-logo" width="48" height="48" />
 			<span class="brand-text">
-				<span class="brand-name">Navnigarg</span>
-				<span class="brand-sub tabular">CA &amp; ASSOCIATES</span>
+				<span class="brand-name">Navni Garg</span>
+				<span class="brand-sub tabular">&amp; ASSOCIATES</span>
 			</span>
 		</a>
 

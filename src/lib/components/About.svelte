@@ -8,7 +8,7 @@
 			<p class="eyebrow eyebrow-paper">About us</p>
 			<h2>Practical finance, kept honest.</h2>
 			<p class="about-copy">
-				At Navnigarg CA &amp; Associates, we are committed to providing reliable and
+				At Navni Garg &amp; Associates, we are committed to providing reliable and
 				practical financial solutions. Our team combines technical expertise with
 				industry knowledge to deliver high-quality services tailored to every
 				client's needs. We believe in building long-term relationships based on

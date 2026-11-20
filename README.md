@@ -1,4 +1,4 @@
-# Navnigarg CA & Associates — website
+# Navni Garg & Associates — website
 
 Single-page marketing site for the chartered accountancy practice, built with **SvelteKit 5** and **pnpm**.
 

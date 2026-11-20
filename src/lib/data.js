@@ -1,6 +1,6 @@
 export const firm = {
-	name: 'Navnigarg CA & Associates',
-	shortName: 'Navnigarg CA',
+	name: 'Navni Garg & Associates',
+	shortName: 'Navni Garg',
 	tagline: 'Chartered Accountants',
 	phone: '+91 81267 93102',
 	phoneHref: 'tel:+918126793102',
