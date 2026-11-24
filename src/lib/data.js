@@ -4,8 +4,8 @@ export const firm = {
 	tagline: 'Chartered Accountants',
 	phone: '+91 81267 93102',
 	phoneHref: 'tel:+918126793102',
-	email: 'office@canavnigarg.in',
-	emailHref: 'mailto:office@canavnigarg.in'
+	email: 'navnigarg0101@gmail.com',
+	emailHref: 'mailto:navnigarg0101@gmail.com'
 };
 
 export const whyChooseUs = [
